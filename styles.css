@@ -259,3 +259,51 @@ ul a {
 .copyright {
     padding-top: 10px;
 }
+
+/* responsive media query start */
+@media (max-width: 768px) {
+    .nav-search {
+        width: 100%; /* Expand to full width */
+    }
+
+    .hero-section {
+        height: 250px; /* Reduce hero section height */
+    }
+
+    .box {
+        width: 48%; /* Adjust width for better fit */
+    }
+}
+
+/* For screens up to 480px wide (typical mobile phones) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+    }
+
+    .nav-search {
+        flex-direction: column; /* Stack search items vertically */
+    }
+
+    .nav-search input,
+    .search-select,
+    .search-icon {
+        width: 100%; /* Make search items full width */
+        border-radius: 4px;
+        margin: 5px 0;
+    }
+
+    .hero-section {
+        height: 200px; /* Further reduce hero section height */
+    }
+
+    .box {
+        width: 100%; /* Make boxes full width on small screens */
+    }
+
+    .foot-panel2 {
+        flex-direction: column; /* Stack footer links vertically */
+    }
+}
+
+/* Additional media queries for larger screens can be added as needed */
